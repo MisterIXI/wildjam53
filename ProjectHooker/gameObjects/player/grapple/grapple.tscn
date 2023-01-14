@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxuj1xef3bujk"]
+
+[ext_resource type="Texture2D" uid="uid://dggo6kexsslsy" path="res://textures/hook.png" id="1_0lvkr"]
+[ext_resource type="Script" path="res://gameObjects/player/grapple/grapple.gd" id="1_bpng5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2my63"]
+
+[node name="Grapple" type="CharacterBody2D"]
+script = ExtResource("1_bpng5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_2my63")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0lvkr")
