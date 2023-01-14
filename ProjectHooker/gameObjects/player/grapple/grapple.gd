@@ -26,7 +26,7 @@ func _process(delta):
 		var player_pos = _player.global_position
 		var new_pos = player_pos + direction * distance_mult
 		global_position = new_pos
-		global_rotation = direction.angle() 
+		global_rotation = direction.angle() + deg_to_rad(90)
 		
 
 	pass
